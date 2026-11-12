@@ -2,7 +2,7 @@
 
 # ASUS ROG Zephyrus G14 (GA401IHR) Hackintosh
 
-OpenCore EFI for the 2020 ASUS ROG Zephyrus G14 (GA401IHR) running macOS Sequoia
+OpenCore EFI for the 2020 ASUS ROG Zephyrus G14 (GA401IHR)
 
 ![macOS](https://img.shields.io/badge/macOS-Sequoia%2015.8.1-blue?logo=apple&logoColor=white)
 ![OpenCore](https://img.shields.io/badge/OpenCore-1.0.4-brightgreen)
