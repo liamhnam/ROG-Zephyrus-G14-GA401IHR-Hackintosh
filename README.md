@@ -39,7 +39,7 @@ It is based on [PIut02/ROG-Zephyrus-G14-GA401-Hackintosh](https://github.com/PIu
 | Laptop | ASUS ROG Zephyrus G14 GA401IHR (BIOS 416) |
 | CPU | AMD Ryzen 7 4800HS (Renoir, 8C/16T) |
 | iGPU | AMD Radeon Vega (Renoir), 2 GB UMA, via NootedRed |
-| dGPU | NVIDIA GeForce GTX 1650 (unsupported in macOS) |
+| dGPU | NVIDIA GeForce GTX 1650 (via nullmoth/nvidia-macos-driver) |
 | Audio | Realtek ALC285 (`layout-id` 33) |
 | Wi-Fi / Bluetooth | Intel Wi-Fi 6E AX210 |
 | Storage | Micron 3400 512 GB NVMe |
