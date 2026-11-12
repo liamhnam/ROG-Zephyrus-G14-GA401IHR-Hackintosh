@@ -41,7 +41,7 @@ It is based on [PIut02/ROG-Zephyrus-G14-GA401-Hackintosh](https://github.com/PIu
 | iGPU | AMD Radeon Vega (Renoir), 2 GB UMA, via NootedRed |
 | dGPU | NVIDIA GeForce GTX 1650 (via nullmoth/nvidia-macos-driver) |
 | Audio | Realtek ALC285 (`layout-id` 33) |
-| Wi-Fi / Bluetooth | MediaTek MT7921 → Intel Wi-Fi 6E AX210 |
+| Wi-Fi / Bluetooth | ~~MediaTek MT7921 (Factory)~~ Intel Wi-Fi 6E AX210 |
 | Storage | Micron 3400 512 GB NVMe |
 | Touchpad | ELAN1201 (I2C HID) |
 
