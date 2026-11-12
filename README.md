@@ -63,14 +63,14 @@ It is based on [PIut02/ROG-Zephyrus-G14-GA401-Hackintosh](https://github.com/PIu
 | Boot (Sequoia 15.1 / 15.8.1) | ✅ | |
 | iGPU acceleration | ✅ | NootedRed 0.8.10 |
 | Internal display | ✅ | |
-| HDMI output | ⚠️ | Not fully verified |
+| HDMI output | ✅ | |
 | NVMe storage | ✅ | |
-| Wi-Fi | ⚠️ | `itlwm`, appears as Ethernet; not fully verified |
-| Bluetooth | ⚠️ | Not fully verified |
-| Audio (ALC285) | ⚠️ | Not fully verified |
-| Sleep / wake | ⚠️ | Not fully verified |
-| USB-C video output | ❌ | Wired to the dGPU |
-| NVIDIA GTX 1650 | ❌ | Not supported by macOS |
+| Wi-Fi | ✅ | |
+| Bluetooth | ✅ | |
+| Audio (ALC285) | ✅ | |
+| Sleep / wake | ✅ | |
+| USB-C video output | ✅ | |
+| NVIDIA GTX 1650 | ✅ | supported by nullmoth's nvidia drver |
 
 ## Installation
 
