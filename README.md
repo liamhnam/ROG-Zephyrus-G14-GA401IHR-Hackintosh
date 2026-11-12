@@ -21,7 +21,6 @@ OpenCore EFI for the 2020 ASUS ROG Zephyrus G14 (GA401IHR)
 - [What works](#what-works)
 - [Installation](#installation)
 - [BIOS configuration](#bios-configuration)
-- [Changes from upstream](#changes-from-upstream)
 - [Known issues](#known-issues)
 - [Credits](#credits)
 - [Disclaimer](#disclaimer)
@@ -95,25 +94,12 @@ Hidden options are reached with [Smokeless UMAF](https://github.com/DavidS95/Smo
 | Secure Boot | Disabled |
 | Fast Boot | Disabled |
 
-## Changes from upstream
-
-Differences from PIut02 `2020/EFI`:
-
-| # | Section | Change | Reason |
-| :-- | :-- | :-- | :-- |
-| 1 | `Kernel → Patch` | Replaced all AMD patches with [AMD_Vanilla](https://github.com/AMD-OSX/AMD_Vanilla) (`eaf52ef`), core count `8`, kept upstream's PAT choice (Shaneee) | Upstream patches have `MaxKernel 23.99.99` (Sonoma only), so Sequoia (Darwin 24) hangs at `EB\|LOG:EXITBS:START` |
-| 2 | `ACPI → Add` | Disabled `SSDT-NoHybGfx.aml` (file kept) | Boot hangs at `[ PCI configuration begin ]` |
-| 3 | `Kernel → Add` | Disabled `AirportItlwm.kext` (file kept) | `Prelinked injection AirportItlwm.kext - Invalid Parameter`; v2.3.0 has no Sequoia build |
-| 4 | `Kernel → Add` | Added `itlwm.kext` 2.3.0 with a preconfigured `WiFiConfig` | Wi-Fi on Sequoia; joins the saved network at boot without HeliPort |
-| 5 | `PlatformInfo → Generic` | Filled in SMBIOS | Upstream leaves it empty for users to generate |
-| 6 | `Kernel → Add` | Replaced the htmambo NootedRed fork (1.0.0) with official [ChefKissInc NootedRed](https://github.com/ChefKissInc/NootedRed) 0.8.10 | The fork kernel-panics about 8 s into boot on 15.8.1 (`24H32`); 0.8.10 boots with full acceleration. NootedRed stays ordered before AppleALC, as required by NootedRed discussion #422 |
 
 ## Known issues
 
 - Wi-Fi via `itlwm` appears in macOS as an Ethernet interface. Use HeliPort to join networks other than the ones in `WiFiConfig`.
 - The GTX 1650 stays powered on because `SSDT-NoHybGfx` is disabled, which reduces battery life.
-- The USB-C port cannot output video because it is wired to the dGPU. Use HDMI.
-- Wi-Fi, Bluetooth, ALC285 audio and sleep/wake have not been fully verified on this machine.
+- The USB-C port cannot output video until you restart the device with the USB-C cable plugged in.
 
 ## Credits
 
